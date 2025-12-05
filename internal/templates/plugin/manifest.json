@@ -1,0 +1,11 @@
+{
+  "id": "my-plugin-id",
+  "name": "My plugin",
+  "version": "1.0.0",
+  "minAppVersion": "0.1.0",
+  "description": "A custom plugin made for inkdown",
+  "author": "Your name goes here",
+  "authorUrl": "Your preferred author URL goes here",
+  "repo": "Your repo",
+  "keywords": ["plugin"]
+}
