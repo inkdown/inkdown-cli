@@ -1,6 +1,11 @@
 package cmd
 
-import "github.com/spf13/cobra"
+import (
+	"inkdown-cli/cmd/plugin"
+	"inkdown-cli/cmd/theme"
+
+	"github.com/spf13/cobra"
+)
 
 var rootCmd = &cobra.Command{
 	Use:   "ink",
@@ -12,7 +17,9 @@ func Execute() {
 }
 
 func init() {
-	rootCmd.AddCommand(initCmd)
+	rootCmd.AddCommand(plugin.PluginCmd)
+	rootCmd.AddCommand(theme.ThemeCmd)
+
 	rootCmd.AddCommand(authCmd)
 	rootCmd.AddCommand(logoutCmd)
 }
