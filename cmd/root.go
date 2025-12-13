@@ -9,7 +9,7 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "ink",
-	Short: "Inkdown cli for publishing plugins and themes",
+	Short: "Inkdown cli for publishing plugins and themes easily",
 }
 
 func Execute() {
